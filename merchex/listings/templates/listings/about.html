@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
+<html>
+    <head><title>Contactez_nous</title></head>
 <body>
-$END$
+    <p class="paragraph">
+        {% for contact in liste_contacts %}
+        <ul>Je m'appelle {{contact.name}} {{contact.surname}} <b>n'hesitez pas a me contacter !</b></ul>
+        <li>TELEPHONE : {{contact.number}}</li>
+        <li>MAIL : {{contact.mail}}</li>
+        {% endfor %}
+    </p>
 </body>
+
 </html>
