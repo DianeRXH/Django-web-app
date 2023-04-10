@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'listings/base.html' %}
+
+{% block content %}
+    <h1>Description des objects en vente</h1>
+    <ul>
+        {% for listing in liste_listings %}
+        <li>{{ listing.title|lower }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
