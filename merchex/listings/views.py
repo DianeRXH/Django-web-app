@@ -5,8 +5,8 @@ from listings.models import Band,Contact,Listing
 def hello(request):
     liste_bands = Band.objects.all()
     return render(request,
-                  'listings/hello.html',
-                  {'liste_bands': liste_bands})
+                'listings/hello.html',
+                {'liste_bands': liste_bands})
 def about(request):
     liste_contacts = Contact.objects.all()
     return render(request,

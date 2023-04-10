@@ -1,6 +1,6 @@
-<html>
-    <head><title>Contactez_nous</title></head>
-<body>
+{% extends 'listings/base.html' %}
+
+{% block content %}
     <p class="paragraph">
         {% for contact in liste_contacts %}
         <ul>Je m'appelle {{contact.name}} {{contact.surname}} <b>n'hesitez pas a me contacter !</b></ul>
@@ -8,6 +8,4 @@
         <li>MAIL : {{contact.mail}}</li>
         {% endfor %}
     </p>
-</body>
-
-</html>
+{% endblock %}

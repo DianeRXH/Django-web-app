@@ -1,11 +1,10 @@
-<html>
-    <head><title>Articles</title></head>
-    <body>
-        <h1>Description des objects en vente</h1>
-        <ul>
-            {% for listing in liste_listings %}
-            <li>{{ listing.title|lower }}</li>
-            {% endfor %}
-        </ul>
-    </body>
-</html>
+{% extends 'listings/base.html' %}
+
+{% block content %}
+    <h1>Description des objects en vente</h1>
+    <ul>
+        {% for listing in liste_listings %}
+        <li>{{ listing.title|lower }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

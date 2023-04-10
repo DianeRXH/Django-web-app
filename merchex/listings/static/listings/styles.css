@@ -1,6 +1,6 @@
 * { background: hotpink }
 
-.paragraph {
+head {
 
     padding: 100px; /* Vous ne connaissez pas encore cette propriété mais elle permet d'ajouter de l'espace dans notre élément*/
     background-image: url('paysage.jpg');
